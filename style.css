@@ -1,0 +1,310 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+nav {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+       display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+   color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+/* Botón hamburguesa oculto por defecto */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.seccion {
+    padding: 80px 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.inicio {
+    background: url('../images/fondo.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.inicio img {
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.tabla-formacion {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabla-formacion thead {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+.tabla-formacion th, .tabla-formacion td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-formacion tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.tabla-formacion em {
+    color: #666;
+    font-style: italic;
+}
+
+
+.sociales {
+    margin-top: 20px;
+}
+
+.sociales a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 28px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.sociales a:hover {
+    color: #ff6600;
+    transform: scale(1.2);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.proyecto {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;max-width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color:#333;
+}
+
+.proyecto img {
+  width: 100%;               /* la imagen ocupa todo el ancho del contenedor */
+  height: auto;              /* para mantener proporción */
+  display: block;            /* elimina espacio abajo de la imagen */
+  border-radius: 8px;        /* opcional: bordes redondeados */
+  object-fit: cover;         /* que la imagen cubra bien el contenedor */
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.experiencia-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #ff6600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.experiencia-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.experiencia-item .empresa {
+    font-weight: bold;
+    color: #555;
+}
+
+.experiencia-item .periodo {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #ff6600;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.redes a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
+/* Estilo del botón Ir Arriba */
+#ir-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    display: none; /* oculto por defecto */
+    transition: all 0.3s ease;
+}
+
+#ir-arriba:hover {
+    background-color: #e65c00;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+        nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    nav ul li {
+        margin: 10px 0;text-align: left;
+    }
+    nav ul li a {
+        padding-left: 30px; /* este es el espaciado que agregamos */
+        display: block;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .proyecto {
+    flex: 1 1 95%;   /* que ocupe casi todo el ancho */
+    max-width: 200%;
+    margin: 0 auto;  /* centrar el div */
+  }
+}
