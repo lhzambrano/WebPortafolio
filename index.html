@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <!-- Integración de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+<!-- Botón Ir Arriba -->
+<button id="ir-arriba" title="Ir arriba">
+    <i class="fas fa-arrow-up"></i>
+</button>
+    <!-- Header / Navegación -->
+    <header>
+        <div class="logo"><i class="fas fa-code"></i> MiPortafolio</div>
+            <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#sobremi"><i class="fas fa-user"></i> Sobre mí</a></li>
+                <li><a href="#formacion"><i class="fas fa-graduation-cap"></i> Formación Académica</a></li>
+                <li><a href="#experiencia"><i class="fas fa-folder-open"></i> Experiencia</a></li>
+                <li><a href="#portafolio"><i class="fas fa-briefcase"></i> Portafolio</a></li>
+                <li><a href="#habilidades"><i class="fas fa-tools"></i> Habilidades</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Sección Inicio -->
+<section id="inicio" class="seccion inicio">
+    <div class="contenido">
+        <h1>Bienvenido a mi Portafolio</h1>
+        <p>Desarrollador Web | Docente | Diseñador</p>
+        <img src="images/foto.png" alt="Foto de perfil">
+
+        <!-- Redes sociales debajo de la foto -->
+        <div class="sociales">
+            <a href="https://github.com/lhzambrano" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/luiszz/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/elbachillerweb_oficial/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:lzambrano5611@utm.edu.ec">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Sobre mí -->
+    <section id="sobremi" class="seccion">
+        <h2><i class="fas fa-user-circle"></i> Sobre mí</h2>
+        <p>Soy un apasionado docente de Computación y Programación con más de 20 años de experiencia en la enseñanza. A lo largo de mi carrera, he formado a innumerables estudiantes en el mundo de la tecnología, ayudándolos a desarrollar habilidades clave para el entorno digital actual.</p>
+        <p>Siempre estoy en busca de nuevos conocimientos y tendencias tecnológicas para aplicarlas en el ámbito educativo y profesional.</p>
+        <p>Cuento con una Tecnología Superior en Desarrollo de Software y una Tecnología Superior Universitaria en Sistemas y Gestión de Data, lo que me ha permitido especializarme en el desarrollo, administración y optimización de sistemas informáticos.</p>
+        <p>Actualmente, continúo mi formación académica cursando una Ingeniería en Tecnologías de la Información y Comunicación y una Maestría en Entornos Digitales para la Educación. Mi objetivo es integrar la tecnología con la enseñanza, creando experiencias de aprendizaje innovadoras y efectivas para las nuevas generaciones.<br>Gracias por tu visita.</p>
+    </section>
+
+    <!-- Formación Académica -->
+    <section id="formacion" class="seccion">
+    <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+
+    <table class="tabla-formacion">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Institución</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maestría Tecnológica en Entornos Digitales para la Educación <em>(En curso)</em></td>
+                <td>Instituto Superior Tecnológico Rumiñahui</td>
+                <td>Actualidad</td>
+            </tr>
+            <tr>
+                <td>Ingeniería en Sistemas de la Información y Comunicación <em>(En curso)</em></td>
+                <td>Universidad Técnica de Manabí</td>
+                <td>Actualidad</td>
+            </tr>
+            <tr>
+                <td>Tecnólogo Superior Universitario en Sistemas y Gestión de Data</td>
+                <td>Instituto Superior Tecnológico Rumiñahui</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Tecnólogo Superior en Desarrollo de Software</td>
+                <td>Instituto Superior Tecnológico Bolivariano de Tecnología</td>
+                <td>2022</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<!-- Experiencia -->
+<section id="experiencia" class="seccion">
+    <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+
+    <div class="experiencia-item">
+        <h3>Desarrollador Web</h3>
+        <p class="empresa">El Bachiller Web</p>
+        <p class="periodo">Enero 2000 - Actualidad</p>
+        <p>Desarrollo de aplicaciones web modernas utilizando tecnologías como HTML5, CSS3, JavaScript, Node.js y bases de datos relacionales. Implementación de interfaces responsive y optimización de rendimiento.</p>
+    </div>
+
+    <div class="experiencia-item">
+        <h3>Docente de computación y robótica</h3>
+        <p class="empresa">Unidad Educativa Particular "Ciudad de Pedernales</p>
+        <p class="periodo">2023 - Actualidad</p>
+        <p>Docente de las materias de computación y robótica de la Unidad Educativa.</p>
+    </div>
+
+    <div class="experiencia-item">
+        <h3>Departamento TICS </h3>
+        <p class="empresa">Escuela de Capacitación de Chóferes Profesionales de Pedernales</p>
+        <p class="periodo">2021 - Actualidad</p>
+        <p>Soporte técnico a usuarios, mantenimiento de equipos, asistencia en redes internas y configuración de software empresarial, implementación de plataformas.</p>
+    </div>
+</section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="seccion">
+        <h2><i class="fas fa-folder-open"></i> Portafolio</h2>
+        <div class="galeria">
+            <a href="https://elbachillerweb.com/" class="proyecto" target="_blank">
+                <img src="images/portafolio1.jpg" alt="Proyecto 1">
+                <h3>El bachiller web</h3>
+                <p>Sitio web que brinda cursos online y certificaciones por competencias laborales.</p>
+            </a>
+                        <a href="https://eva.uepcp.edu.ec/" class="proyecto" target="_blank">
+                <img src="images/portafolio2.jpg" alt="Proyecto 2">
+                <h3>Plataforma EVA - UEPCP</h3>
+                <p>Plataforma Educativa de la Unidad Educativa Particular "Ciudad de Pedernales"</p>
+            </a>
+            <a href="https://jmvpedernales.com/" class="proyecto" target="_blank">
+                <img src="images/portafolio3.jpg" alt="Proyecto 3">
+                <h3>Sitio web Jmv 67 Pedernales</h3>
+                <p>Sitio web de la Unidad Educativa Fiscomisional "José María Vélaz s.j" Ext. 67 Pedernales.".</p>
+            </a>
+            <a href="https://evas.jmvpedernales.com/" class="proyecto" target="_blank">
+                <img src="images/portafolio4.jpg" alt="Proyecto 3">
+                <h3>Plataforma EVAS - JVM 67 Pedernales</h3>
+                <p>Plataforma Educativa de la Unidad Educativa Fiscomisional "José María Vélaz s.j" Ext. 67 Pedernales.</p>
+            </a>
+
+            <a href="https://sinchopeder.com/" class="proyecto" target="_blank">
+                <img src="images/portafolio5.jpg" alt="Proyecto 5">
+                <h3>Sitio Web Sinchopeder</h3>
+                <p>Sitio web del Sindicato de Chóferes Profesionales del Cantón Pedernales.</p>
+            </a>
+       
+            <a href="https://avirtual.esconduccionpedernales.moodle.edux.ec/" class="proyecto" target="_blank">
+                <img src="images/portafolio6.jpg" alt="Proyecto 6">
+                <h3>Plataforma Moodle Sinchopeder</h3>
+                <p>Plataforma Educativa del Sindicato de Chóferes Profesionales del Cantón Pedernale.</p>
+            </a>
+            <a href="https://eva.uepcp.edu.ec/" class="proyecto" target="_blank">
+                <img src="images/portafolio7.jpg" alt="Proyecto 7">
+                <h3>Sitio Web - UEPCP</h3>
+                <p>Descripción breve del proyecto.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="seccion">
+        <h2><i class="fas fa-laptop-code"></i> Habilidades</h2>
+        <ul class="skills">
+            <li>Programación en Python, mBlock, Java, C++</li>
+            <li>Desarrollo web (HTML, CSS, PHP, WordPress)</li>
+            <li>Responsive Design</li>
+            <li>Administración de Moodle</li>
+            <li>Diseño instruccional con Canva y Genially</li>
+            <li>Ofimática avanzada (Google Workspace, MS Office)</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion">
+        <h2><i class="fas fa-paper-plane"></i> Contacto</h2>
+        <form id="form-contacto">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </form>
+        <p id="respuesta"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mi Portafolio Profesional</p>
+        <div class="redes">
+            <a href="https://github.com/lhzambrano" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+            <a href="https://www.linkedin.com/in/luiszz/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
